@@ -34,7 +34,7 @@
 
 #### 总体设计
 
-<img src="C:\Users\zlj\AppData\Roaming\Typora\typora-user-images\image-20200608110216654.png" alt="image-20200608110216654" style="zoom:67%;" />
+<img src="./asset/image-20200608110216654.png" alt="image-20200608110216654" style="zoom:67%;" />
 
 #### 系统组成
 
@@ -55,7 +55,7 @@
 
 #### 模块设计
 
-<img src="C:\Users\zlj\AppData\Roaming\Typora\typora-user-images\image-20200608105809462.png" alt="image-20200608105809462" style="zoom:67%;" />
+<img src="./asset/image-20200608105809462.png" alt="image-20200608105809462" style="zoom:67%;" />
 
   在本系统中的模块设计如上图所示，在MainAcitivity create的时候，调用getData函数，这时调用videoAPI里面的getVideo，然后会返回一个VideoResponse格式的response body。把按照json解析存在myVideo这个array里面，去bind ViewHolder从而渲染adapter。这样mainActivity也算是构建完了。在这里就实现，从后端读取数据，并且用glide显示封面的部分。
 
